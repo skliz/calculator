@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+	<title>go-dut</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="main__container container">
+				<div class="main__row">
+					<div class="main__column">
+						<div class="calc">
+							<input type="text" placeholder="Введите пройденный километраж" class="calc__input" id="kilometr">
+							<div class="calc__wrap wrap_1">
+								<div class="calc__display" id="display-benzin"></div>
+							</div>
+							<input type="text" placeholder="Введите показания ДУТ" class="calc__input" id="dut">
+							<div class="calc__wrap wrap_2">
+								<div class="calc__display" id="display-gaz"></div>
+							</div>
+							<div class="calc__wrap wrap_3">
+								<div class="calc__display" id="consum-gaz"></div>
+							</div>
+							<button class="calc__season">Лето</button>
+							<button class="calc__calculate">расчитать</button>
+							<button class="calc__clear">отчистить</button>
+						</div>
+					</div>
+					<div class="main__column">
+						<div class="date"></div>
+						<div class="time"></div>
+						<div class="weather"></div>
+					</div>
+				</div>
+				<div class="box">
+					<button class="btn-calc">Калькулятор</button>
+					<ul class="calculator">
+						<li class="calculator__item">
+							<input type="text" name="user" placeholder="0" readonly class="calculator__input">
+						</li>
+						<li class="calculator__item clean" onclick="clean()">C</li>
+						<li class="calculator__item back" onclick="back()">&larr;</li>
+						<li class="calculator__item" onclick="insert('+')">+</li>
+						<li class="calculator__item" onclick="insert('-')">-</li>
+						<li class="calculator__item" onclick="insert('*')">*</li>
+						<li class="calculator__item" onclick="insert('/')">/</li>
+						<li class="calculator__item" onclick="insert('7')">7</li>
+						<li class="calculator__item" onclick="insert('8')">8</li>
+						<li class="calculator__item" onclick="insert('9')">9</li>
+						<li class="calculator__item" onclick="insert('(')">(</li>
+						<li class="calculator__item" onclick="insert('4')">4</li>
+						<li class="calculator__item" onclick="insert('5')">5</li>
+						<li class="calculator__item" onclick="insert('6')">6</li>
+						<li class="calculator__item" onclick="insert(')')">)</li>
+						<li class="calculator__item" onclick="insert('1')">1</li>
+						<li class="calculator__item" onclick="insert('2')">2</li>
+						<li class="calculator__item" onclick="insert('3')">3</li>
+						<li class="calculator__item equal" onclick="equal()">=</li>
+						<li class="calculator__item zero" onclick="insert('0')">0</li>
+						<li class="calculator__item" onclick="insert('.')">.</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
